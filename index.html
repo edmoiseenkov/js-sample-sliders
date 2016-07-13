@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Sliders</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+	<div class="block">
+		<h2>Slide effect</h2>
+		<div id="slider1" class="slider slide-effect"></div>
+	</div>
+
+	<div class="block">
+		<h2>Fade effect</h2>
+		<div id="slider2" class="slider fade-effect"></div>
+	</div>
+
+	<script src="vendor/require.min.js"></script>
+	<script src="js/config/require.js"></script>
+
+	<script type="text/javascript">
+		require(['classes/App'], function(App) {
+			(new App()).run();
+		});
+	</script>
+</body>
+</html>
